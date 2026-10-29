@@ -2,7 +2,7 @@
 
 import time
 
-TOKEN_TTL_SECONDS = 3600  # トークンの有効期限: 1 時間
+TOKEN_TTL_SECONDS = 86400  # トークンの有効期限: 24 時間
 
 
 def verify_token(token: str, issued_at: float, now: float | None = None) -> bool:
