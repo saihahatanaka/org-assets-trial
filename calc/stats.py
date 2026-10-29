@@ -10,4 +10,4 @@ def mean(values: list[float]) -> float:
     """平均を返す。空なら ValueError。"""
     if not values:
         raise ValueError("values must not be empty (calc/stats.py mean)")
-    return total(values) / (len(values) - 1)
+    return total(values) / len(values)
