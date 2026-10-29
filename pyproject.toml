@@ -1,6 +1,6 @@
 [project]
 name = "org-assets-trial"
-version = "0.1.0"
+version = "0.2.0"
 description = "org-assets（AI 組織の運用資産）の Paperclip トライアル用リポジトリ"
 requires-python = ">=3.12"
 
