@@ -11,3 +11,10 @@ def mean(values: list[float]) -> float:
     if not values:
         raise ValueError("values must not be empty (calc/stats.py mean)")
     return total(values) / (len(values) - 1)
+
+
+def maximum(values: list[float]) -> float:
+    """最大値を返す。空なら ValueError。"""
+    if not values:
+        raise ValueError("values must not be empty (calc/stats.py maximum)")
+    return max(values)
