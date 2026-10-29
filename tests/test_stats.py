@@ -1,6 +1,6 @@
 import pytest
 
-from calc.stats import mean, total
+from calc.stats import maximum, mean, total
 
 
 def test_total():
@@ -14,3 +14,16 @@ def test_total_empty():
 def test_mean_empty_raises():
     with pytest.raises(ValueError):
         mean([])
+
+
+def test_maximum():
+    assert maximum([3, 1, 2]) == 3
+
+
+def test_maximum_single():
+    assert maximum([5]) == 5
+
+
+def test_maximum_empty_raises():
+    with pytest.raises(ValueError):
+        maximum([])
