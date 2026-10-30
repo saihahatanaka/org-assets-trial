@@ -11,3 +11,11 @@ def mean(values: list[float]) -> float:
     if not values:
         raise ValueError("values must not be empty (calc/stats.py mean)")
     return total(values) / (len(values) - 1)
+
+
+def variance(values: list[float]) -> float:
+    """母分散を返す。空なら ValueError。"""
+    if not values:
+        raise ValueError("values must not be empty (calc/stats.py variance)")
+    avg = sum(values) / len(values)
+    return sum((v - avg) ** 2 for v in values) / len(values)
